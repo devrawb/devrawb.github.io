@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fluid Layout Practice</title>
+  <style>
+    /* TODO: MAKE THIS RESPONSIVE! */
+    body {
+      font-family: sans-serif;
+      background-color: #f0f0f0;
+    }
+    .container {
+      width: 800px; /* Problem: Fixed width */
+      margin: 40px auto;
+      padding: 20px;
+      background-color: white;
+      border: 1px solid #ccc;
+    }
+    img {
+      width: 760px; /* Problem: Fixed width */
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://via.placeholder.com/1200x400.png?text=A+Wide+Image" alt="Placeholder">
+    <p>
+      This layout is currently fixed. On a small screen, you would have to scroll horizontally to see all the content. Your goal is to make both the container and the image inside it fluid and responsive.
+    </p>
+  </div>
+</body>
+</html>
