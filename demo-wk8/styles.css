@@ -1,0 +1,26 @@
+/* Base Styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto; /* Added top/bottom margin for visual separation */
+    padding: 20px;
+    background-color: #e0e0e0; /* Slightly lighter background for container */
+    border: 2px solid #333; /* To clearly see the container boundary */
+}
+
+.box {
+    background-color: #4CAF50; /* Green boxes */
+    color: white;
+    padding: 20px;
+    margin: 5px; /* Add a small margin to see gap effect clearly */
+    border: 1px solid #333;
+    text-align: center;
+    box-sizing: border-box; /* Important for consistent sizing */
+}
