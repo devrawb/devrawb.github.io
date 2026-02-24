@@ -24,6 +24,23 @@
       font-size: 18px;
       line-height: 1.6;
     }
+    /* Flexbox CSS */
+    /* Base styles just so we can see the boxes clearly */
+      .demo-container {
+        background-color: #e0e7ff;
+        border: 4px dashed #7e6363; /* Helps see the container bounds */
+        min-height: 300px; /* Room to demonstrate vertical alignment */
+        padding: 10px;
+      }
+
+      .box {
+        background-color: #ff6b6b;
+        color: white;
+        font-size: 2rem;
+        font-weight: bold;
+        padding: 20px 40px;
+        border-radius: 8px;
+      }
   </style>
 </head>
 <body>
@@ -33,5 +50,10 @@
       This layout is currently fixed. On a small screen, you would have to scroll horizontally to see all the content. Your goal is to make both the container and the image inside it fluid and responsive.
     </p>
   </div>
+  <div class="demo-container">
+	  <div class="box box-1">1</div>
+	  <div class="box box-2">2</div>
+	  <div class="box box-3">3</div>
+	</div>
 </body>
 </html>
