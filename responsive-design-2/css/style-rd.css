@@ -1,0 +1,114 @@
+/*Recap CSS Styles*/
+
+/* =========================================
+       BASE STYLES & RESET
+       ========================================= */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    /* 🌟 PILLAR 1: FLEXIBLE IMAGES */
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block; /* Removes weird bottom spacing on images */
+      border-radius: 8px;
+    }
+
+    /* =========================================
+       LAYOUT: HEADER (DESKTOP FIRST)
+       ========================================= */
+    .site-header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px 5%; /* 5% gives fluid breathing room on the edges */
+      
+      /* 🌟 PILLAR 2: FLEXBOX (Aligning Logo and Nav) */
+      display: flex;
+      justify-content: space-between; /* Pushes logo left, nav right */
+      align-items: center;            /* Vertically centers them */
+    }
+
+    .site-nav {
+      display: flex;
+      gap: 30px; /* Spacing between links */
+    }
+
+    .site-nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .site-nav a:hover {
+      color: #ff6b6b;
+    }
+
+    /* =========================================
+       LAYOUT: HERO SECTION (DESKTOP FIRST)
+       ========================================= */
+    .hero-section {
+      padding: 60px 5%;
+      max-width: 1200px;
+      margin: 0 auto;
+
+      /* 🌟 PILLAR 2: FLEXBOX (Side-by-side layout) */
+      display: flex;
+      align-items: center; /* Centers the text vertically with the image */
+      gap: 40px;
+    }
+
+    /* Make both sides take up exactly 50% of the available space */
+    .hero-text, .hero-image {
+      flex: 1; 
+    }
+
+    .hero-text h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #ff6b6b;
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    /* =========================================
+       🌟 PILLAR 3: MEDIA QUERIES (MOBILE LAYOUT)
+       ========================================= */
+    @media (max-width: 768px) {
+      
+      /* 1. Stack the navigation */
+      .site-header {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      /* 2. Stack the Hero section */
+      .hero-section {
+        /* PRO-TIP: column-reverse puts the image ON TOP of the text on mobile! */
+        flex-direction: column-reverse; 
+        text-align: center;
+        padding: 40px 5%;
+      }
+
+      .hero-text h1 {
+        font-size: 2.2rem; /* Shrink font slightly for mobile */
+      }
+    }
