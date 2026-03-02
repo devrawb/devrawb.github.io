@@ -1,0 +1,76 @@
+    /*ACTIVITY 3 STARTER CSS*/
+    /* =========================================
+       BASE STYLES (Do not change these)
+       ========================================= */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      color: white;
+    }
+
+    /* =========================================
+       🚨 YOUR TASK STARTS HERE 🚨
+       ========================================= */
+
+    .hero {
+      background-color: #2c3e50;
+      background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://placehold.co/1920x1080/2c3e50/white?text=Background+Image');
+      background-size: cover;
+      background-position: center;
+      
+      /* STEP 1: Make this section take up exactly 100% of the viewport height! */
+      /* Add your CSS here: */
+      
+      
+
+      /* STEP 2: Use Flexbox to center the text perfectly in the middle of the screen. */
+      /* Remember, you need 3 lines of Flexbox code to center things! */
+      /* Add your CSS here: */
+      
+
+
+      text-align: center;
+    }
+
+    /* 
+       STEP 3: Accessibility Fix! 
+       Convert all the 'px' values below into 'rem' values.
+       Math tip: Divide the pixel value by 16.
+       (e.g., 16px = 1rem, 32px = 2rem, 48px = 3rem)
+    */
+
+    h1 {
+      /* Change this to rem */
+      font-size: 64px; 
+      
+      /* Change this to rem */
+      margin-bottom: 16px; 
+    }
+
+    p {
+      /* Change this to rem */
+      font-size: 24px; 
+      
+      /* Change this to rem */
+      margin-bottom: 32px; 
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #ff6b6b;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background 0.3s;
+
+      /* Change both padding values to rem */
+      padding: 16px 32px; 
+      
+      /* Change this to rem */
+      font-size: 20px; 
+    }
+
+    .btn:hover {
+      background-color: #ff4757;
+    }
