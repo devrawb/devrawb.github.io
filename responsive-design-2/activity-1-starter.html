@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 2 - Activity 1: CSS Grid Areas</title>
+  
+  <style>
+    /* =========================================
+       BASE STYLES (Do not change these)
+       ========================================= */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    /* Step 1: We assign a "grid-area" name to each HTML element */
+    .header  { background: #ff9ff3; padding: 30px; grid-area: header; }
+    .sidebar { background: #feca57; padding: 30px; grid-area: sidebar; }
+    .content { background: #48dbfb; padding: 150px 30px; grid-area: content; }
+    .footer  { background: #ff6b6b; padding: 30px; grid-area: footer; }
+
+    /* =========================================
+       MOBILE LAYOUT (1 Column Stack)
+       ========================================= */
+    .site-layout {
+      display: grid;
+      gap: 15px;
+      grid-template-columns: 1fr;
+      
+      /* On mobile, everything just stacks in one column */
+      grid-template-areas: 
+        "header"
+        "sidebar"
+        "content"
+        "footer";
+    }
+
+    /* =========================================
+       🚨 YOUR TASK: DESKTOP LAYOUT
+       ========================================= */
+    @media (min-width: 768px) {
+      .site-layout {
+        /* This creates 2 columns: a 250px one, and one that fills the rest of the space */
+        grid-template-columns: 250px 1fr;
+        
+        /* 
+          YOUR TASK:
+          Right now, the sidebar is on the LEFT side of the content.
+          Change the words in the grid-template-areas below to move 
+          the sidebar to the RIGHT side of the content!
+          
+          Hint: You also need to flip the columns above so the 250px is on the right!
+        */
+        grid-template-areas: 
+          "header  header"
+          "sidebar content"
+          "footer  footer";
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Notice the HTML order never changes! -->
+  <div class="site-layout">
+    <header class="header">Header</header>
+    <aside class="sidebar">Sidebar</aside>
+    <main class="content">Main Content</main>
+    <footer class="footer">Footer</footer>
+  </div>
+
+</body>
+</html>

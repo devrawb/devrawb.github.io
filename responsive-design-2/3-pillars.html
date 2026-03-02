@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recap: Percentages, Images & Media Queries</title>
+  <style>
+    /* =========================================
+       1. FLUID LAYOUT (Percentages)
+       ========================================= */
+    .container {
+      width: 90%;            /* Fluid: Always takes up 90% of the screen */
+      max-width: 1000px;     /* ...but stops growing at 1000px */
+      margin: 0 auto;        /* Centers the container */
+      background-color: #f8f9fa;
+      padding: 20px;
+      border: 2px solid #333;
+    }
+
+    .column {
+      width: 48%;            /* Fluid: Takes up just under half the container */
+      display: inline-block; /* Places columns side-by-side */
+      vertical-align: top;   /* Aligns content to the top */
+      padding: 10px;
+      box-sizing: border-box; /* Ensures padding doesn't break the % math */
+    }
+
+    /* =========================================
+       2. FLEXIBLE IMAGES
+       ========================================= */
+    img {
+      max-width: 100%;       /* Fluid: Never wider than its parent column */
+      height: auto;          /* Maintains aspect ratio so it doesn't stretch */
+      border-radius: 8px;
+    }
+
+    /* Text styling for readability */
+    h2 { margin-top: 0; }
+    p { line-height: 1.6; }
+
+    /* =========================================
+       3. MEDIA QUERIES (The Breakpoint)
+       ========================================= */
+    @media (max-width: 768px) {
+      /* When the screen is 768px or smaller (Tablets/Phones)... */
+      
+      .column {
+        width: 100%;         /* Override the 48%. Make items take the full width */
+        display: block;      /* Stack them vertically */
+        margin-bottom: 20px; /* Add some space between stacked columns */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- Left Column: Text -->
+    <div class="column">
+      <h2>The Percentage Layout</h2>
+      <p>
+        Notice how this text container is exactly <strong>48%</strong> of the screen's width? 
+        If you resize the browser window, it fluidly shrinks and grows.
+      </p>
+      <p>
+        Once the screen gets smaller than <strong>768px</strong>, our media query catches it 
+        and changes the width to <strong>100%</strong>, forcing it to stack.
+      </p>
+    </div>
+
+    <!-- Right Column: Image -->
+    <div class="column">
+      <img src="https://placehold.co/800x600/2c3e50/ffffff?text=Flexible+Image" alt="Placeholder graphic">
+    </div>
+
+  </div>
+
+</body>
+</html>
