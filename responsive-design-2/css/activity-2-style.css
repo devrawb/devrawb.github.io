@@ -1,0 +1,59 @@
+/* =========================================
+       BASE STYLES (Do not change these)
+========================================= */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      padding: 40px 20px;
+      margin: 0;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+/* =========================================
+       🚨 YOUR TASK STARTS HERE 🚨
+============================================ */
+
+    /* 
+      STEP 1: Fix the giant images! 
+      Right now, they are 800px wide and causing a horizontal scrollbar.
+      Write the CSS rule to make them never exceed the width of their container, 
+      while keeping their height automatic.
+    */
+
+    img {
+      /* Add the necessary code to resolve the images size so they auto scale that you learned last week*/
+      
+      
+      border-radius: 4px;
+      margin-bottom: 10px;
+      display: block; /* Removes empty space under the image */
+    }
+
+    /* 
+      STEP 2: Build the algorithmic layout!
+      Right now, the cards are just stacking on top of each other.
+      Turn this container into a CSS Grid.
+      Use the "Magic Line" (repeat, auto-fit, minmax) to automatically 
+      create columns that are at least 300px wide. 
+    */
+    .gallery-container {
+      /* Add your Week 2 CSS Grid magic line here: */
+      
+      
+      
+    }
