@@ -98,6 +98,7 @@
       .site-header {
         flex-direction: column;
         gap: 15px;
+        background-color: red;
       }
 
       /* 2. Stack the Hero section */
