@@ -48,7 +48,7 @@
     @media (min-width: 768px) {
       .site-layout {
         /* This creates 2 columns: a 250px one, and one that fills the rest of the space */
-        grid-template-columns: 250px 1fr;
+        grid-template-columns: 1fr 250px;
         
         /* 
           YOUR TASK:
@@ -60,7 +60,7 @@
         */
         grid-template-areas: 
           "header  header"
-          "sidebar content"
+          "content sidebar"
           "footer  footer";
       }
     }

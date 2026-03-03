@@ -36,6 +36,8 @@
     */
 
     img {
+      max-width: 100%;
+      height: auto;
       /* Add the necessary code to resolve the images size so they auto scale that you learned last week*/
       
       
@@ -53,7 +55,8 @@
     */
     .gallery-container {
       /* Add your Week 2 CSS Grid magic line here: */
-      
-      
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));   
       
     }
