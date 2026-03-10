@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Profile Card Builder</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <h1>Profile Card Builder</h1>
+
+  <!-- The Controls -->
+  <div class="controls">
+    <label for="nameInput">Name:</label>
+    <input type="text" id="nameInput" placeholder="Enter a name...">
+
+    <label for="bioInput">Bio:</label>
+    <input type="text" id="bioInput" placeholder="Write a short bio...">
+
+    <label for="imgInput">Image URL:</label>
+    <input type="text" id="imgInput" placeholder="Paste an image URL...">
+
+    <label for ="colorInput">Card Color:</label>
+    <input type="text" id="colorInput" placeholder="Enter a color name or hex code...">
+
+    <button id="updateButton">Create Profile</button>
+  </div>
+
+  <hr>
+
+  <!-- The Display Card -->
+  <h2>Your Profile Card:</h2>
+  <div id="profileCard">
+    <img id="displayImage" src="https://via.placeholder.com/150" alt="Profile Picture">
+    <h3 id="displayName">Your Name</h3>
+    <p id="displayBio">Your bio will appear here.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
